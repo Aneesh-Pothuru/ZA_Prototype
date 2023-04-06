@@ -3,12 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Zombies Attack</title>
+    <title>Unity WebGL Player | ZA_prototype</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
-    <h1>Zombies Attack</h1>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=960 height=600></canvas>
       <div id="unity-loading-bar">
@@ -21,13 +20,8 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Zombies Attack</div>
+        <div id="unity-build-title">ZA_prototype</div>
       </div>
-      <h1>Game Rules</h1>
-      <h3>1. Move Left or Right with the arrows.</h3>
-      <h3>2. Shoot at Zombie using the spacebar.</h3>
-      <h3>3. You have 3 lives.</h3>
-
     </div>
     <script>
       var container = document.querySelector("#unity-container");
@@ -64,9 +58,9 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/ZombiesAttack.loader.js";
       var config = {
-        dataUrl: buildUrl + "/ZombiesAttack.data.br",
-        frameworkUrl: buildUrl + "/ZombiesAttack.framework.js.br",
-        codeUrl: buildUrl + "/ZombiesAttack.wasm.br",
+        dataUrl: buildUrl + "/ZombiesAttack.data",
+        frameworkUrl: buildUrl + "/ZombiesAttack.framework.js",
+        codeUrl: buildUrl + "/ZombiesAttack.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "ZA_prototype",
